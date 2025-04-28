@@ -1,0 +1,170 @@
+/* Alap stílusok */
+:root {
+  --light-gray: #d9dcd6; /* Világos szürke */
+  --yellow: #fdc500; /* Sárga */
+  --blue: #00509d; /* Kék */
+  --dark-blue: #16425b; /* Sötétkék */
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+}
+
+/* Navigációs menü */
+#menu-logo {
+  margin-left: 15px;
+  width: 100px;
+  border-radius: 3px;
+  box-shadow: 4px 4px 10px black;
+}
+.navbar {
+  background-color: var(--dark-blue);
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-left: 15px;
+}
+
+.nav-link {
+  color: white !important;
+  font-size: 1.1rem;
+  padding: 10px 15px;
+}
+
+.navbar-nav .nav-item {
+  margin-right: 15px;
+}
+.nav-item {
+  width: 100px;
+  text-align: center;
+}
+
+.navbar-nav .nav-item:hover {
+  background-color: #0056b3;
+  border-radius: 5px;
+}
+
+.active {
+  background-color: #35596d;
+}
+
+/* Fő tartalom */
+main {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+  background-color: rgb(249, 249, 233);
+}
+.container {
+  margin-top: 30px;
+}
+
+/* Szekciók */
+section {
+  border: 1px solid lightgray;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 7px;
+  box-shadow: 4px 4px 10px lightgray;
+}
+.section-title {
+  font-size: 1.8rem;
+  color: #007bff;
+  margin-top: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 10px;
+}
+
+#kapcsolat-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Oldalsáv */
+.aside {
+  border-radius: 5px;
+}
+aside section {
+  background-color: var(--yellow);
+}
+aside h4 {
+  font-weight: 600;
+}
+aside p {
+  text-align: justify;
+}
+aside img {
+  width: 160px;
+  display: block;
+  margin: auto;
+}
+/* Fő szekció és layout */
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Kapcsolati űrlap */
+form {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 5px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+
+form .form-control {
+  margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+footer p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+footer p::after{
+  content: "Horváth László";
+}
+
+/* Média leképezés - kisebb képernyők */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+}

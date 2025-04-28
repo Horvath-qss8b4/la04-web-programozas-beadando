@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="img/logo.png" />
+  <title>Könyvkereső</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <!-- Fő menü -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <img id="menu-logo" src="img/konyvek.jpg" alt="" />
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Könyvkereső</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Főlap</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/keres.html">Keres</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/konyvek.html">Könyvek</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/kapcsolat.html">Kapcsolat</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="pages/rolunk.html">Rólunk</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container">
+      <div class="row">
+        <!-- Fő tartalom -->
+        <main class="col-md-8">
+          <article>
+            <section>
+              <h2 class="section-title">Egy kis leírás</h2>
+              <p>A lap teljesen MySQL kapcsolattal és node install telepítéssel működik. A /database/konyv.sql file MySQL-be való importációja után teljes. A backendet indítani node js/server.js
+              </p>
+              <ul>
+                <li><h6>Oldalsávon egy random reklám, kategóriák adatbázisból listázva</h6></li>
+                <li><h6>Keres oldal, minden mezőben keres, Live search</h6></li>
+                <li><h6>Könyvek oldal button events-re a teljes adatbázist adja táblázatban</h6></li>
+                <li><h6>Kapcsolat oldal egy validált form, ami feldolgozza a hibákat és message error-ként visszaadja</h6></li>
+                <li><h6>Rövid információ...</h6></li>
+              </ul>
+            </section>
+          </article>
+
+          <section>
+            <h3 class="section-title">Kategóriák</h3>
+            <ul>
+              <li>Kategóriák</li>
+              <li>Kategóriák</li>
+              <li>Kategóriák</li>
+            </ul>
+          </section>
+        </main>
+
+        <!-- Oldalsáv (aside) -->
+        <aside class="col-md-4 aside">
+          <section>
+            <h4>Androidos alkalmazásfejlesztés Kotlin nyelven</h4>
+            <p>
+              Okostelefonos vektorgrafika programozása sokak fantáziáját
+              megmozgatja, számos alkalmazáshoz adhat ötletet, új perspektívát
+              nyithat, pláne, ha egy csipetnyi interakcióval is fel tudjuk
+              ruházni mindezt. Ebben a kiadványban kap helyet a HTTP alapú
+              kérések alapszintű lebonyolításának bemutatása is.
+            </p>
+            <img src="img/reklam.jpeg" alt="Reklám" class="img-fluid" />
+          </section>
+        </aside>
+      </div>
+    </div>
+
+    <script type="module" src="js/kategoria.js"></script>
+    <!-- <script type="module" src="js/front-end.js"></script> -->
+  </main>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Könyvkereső. </p>
+  </footer>
+
+  <!-- Bootstrap JS és Popper.js -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

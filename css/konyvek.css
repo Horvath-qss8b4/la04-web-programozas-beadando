@@ -1,0 +1,64 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+}
+
+header,
+footer {
+  text-align: center;
+}
+footer {
+  margin-top: 0px;
+}
+main {
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 0;
+}
+
+.tabla-container {
+  flex: 1;
+  overflow-y: auto; 
+  padding-bottom: 20px;
+}
+
+table {
+  width: 97%;
+  border-collapse: collapse;
+  margin: 0 0 0 10px;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+th {
+  position: sticky; /* A fejléc ragadós lesz */
+  top: 0; /* A fejléc a táblázat tetején marad, amikor görgetünk */
+  background-color: #fff; /* Háttérszín, hogy ne tűnjön el */
+  z-index: 1; /* A többi tartalom előtt legyen */
+  background-color: var(--dark-blue);
+  color: var(--light-gray);
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2; /* Páros sorok színe */
+}
+
+button {
+  width: 160px;
+  margin: 0 0 20px 20px;
+  background-color: var(--dark-blue);
+  color: var(--light-gray);
+  font-weight: bold;
+  border-radius: 7px;
+}

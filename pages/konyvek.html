@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="img/logo.png" />
+    <title>Könyvkereső</title>
+    <link href="../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/konyvek.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Fő menü -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <img id="menu-logo" src="../img/konyvek.jpg" alt="" />
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Könyvkereső</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Főlap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/keres.html">Keres</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../pages/konyvek.html"
+                  >Könyvek</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/kapcsolat.html">Kapcsolat</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/rolunk.html">Rólunk</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1>Könyvek listája</h1>
+      <button onclick="betoltKonyveket()">Adatok betöltése</button>
+      <div class="tabla-container">
+        <table border="1" id="konyvTabla">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Cím</th>
+              <th>Szerző</th>
+              <th>Kategória</th>
+              <th>Kiado</th>
+              <th>Ár</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Ide jönnek a sorok -->
+          </tbody>
+        </table>
+      </div>
+
+      <script src="../js/konyvek.js"></script>
+    </main>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Könyvkereső. </p>
+    </footer>
+
+    <!-- Bootstrap JS és Popper.js -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
